@@ -3,8 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'maven-publish'
 }
-
-group = 'com.github.jitpack'
+group = 'com.github.LiuDongCai'
 version = '1.0.0'
 
 android {
