@@ -3,8 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'maven-publish'
 }
-group = 'com.github.LiuDongCai'
-version = '1.0.2'
 
 android {
     compileSdkVersion 31
@@ -22,16 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-}
-
-allprojects {
-    repositories {
-        mavenCentral()
-        maven { url "https://jitpack.io" }
     }
 }
 
@@ -50,7 +44,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.LiuDongCai'
                 artifactId = 'RichText'
-                version = '1.0.2'
+                version = '1.0.3'
             }
         }
     }
