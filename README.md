@@ -26,7 +26,8 @@
 
 | 方法名 | 方法说明 | 备注 |
 | ------------ | ------------- |  ------------- | 
-| addText()| 添加文本 | text、textSize、textColor必选；isBold、isUnderline、handleClick可选 |
+| addText()| 添加文本 | text、textSize、textColor必选；
+isBold、isUnderline、handleClick可选 |
 | addTagText()| 添加标签文本 | text、textSize、textColor、background必选；isBold、isUnderline、handleClick可选 |
 | addImage()| 添加文本 | resId、width、height必选；handleClick可选 |
 | addEmptyText()| 添加空格 | text必选 |
@@ -47,23 +48,23 @@
 2. 赋值
 
     ```
-        findViewById<RichTextView>(R.id.rtv_text)?.clear()
-            ?.addText("Text",14f,R.color.purple_200)
-            ?.addText("UnderLine_Text",16f,R.color.teal_200,isBold = true){
-                Toast.makeText(this,"Click：UnderLine_Text",Toast.LENGTH_SHORT).show()
-            }
-            ?.addText("Bold_Text",16f,R.color.teal_200,isBold = true)
-            ?.addEmptyText(" ")
-            ?.addTagText("tag",16f,R.color.white,R.color.purple_200){
-                Toast.makeText(this,"Click：tag",Toast.LENGTH_SHORT).show()
-            }
-            ?.addEmptyText(" ")
-            ?.addImage(R.mipmap.image,100f,100f) {
-                Toast.makeText(this,"Click：image",Toast.LENGTH_SHORT).show()
-            }
-            ?.build()
+      findViewById<RichTextView>(R.id.rtv_text)?.clear()
+        ?.addText("Text",14f,R.color.purple_200)
+        ?.addText("UnderLine_Text",16f,R.color.teal_200,isBold = true){
+            Toast.makeText(this,"Click：UnderLine_Text",Toast.LENGTH_SHORT).show()
+        }
+        ?.addText("Bold_Text",16f,R.color.teal_200,isBold = true)
+        ?.addEmptyText(" ")
+        ?.addTagText("tag",16f,R.color.white,R.color.purple_200){
+            Toast.makeText(this,"Click：tag",Toast.LENGTH_SHORT).show()
+        }
+        ?.addEmptyText(" ")
+        ?.addImage(R.mipmap.image,100f,100f) {
+            Toast.makeText(this,"Click：image",Toast.LENGTH_SHORT).show()
+        }
+        ?.build()
    ```
 
 效果如下图所示：
 
-![](/assets/guideview.gif)
+![](/assets/richtext.jpg)
