@@ -4,6 +4,9 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.github.LiuDongCai'
+version = '1.0.4'
+
 android {
     compileSdkVersion 31
 
@@ -44,7 +47,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.LiuDongCai'
                 artifactId = 'RichText'
-                version = '1.0.3'
+                version = '1.0.4'
             }
         }
     }
