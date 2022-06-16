@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 group = 'com.github.LiuDongCai'
-version = '1.0.0'
+version = '1.0.2'
 
 android {
     compileSdkVersion 31
@@ -28,6 +28,13 @@ android {
     }
 }
 
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -43,7 +50,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.LiuDongCai'
                 artifactId = 'RichText'
-                version = '1.0.0'
+                version = '1.0.2'
             }
         }
     }
