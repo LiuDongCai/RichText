@@ -28,7 +28,7 @@
 | ------------ | ------------- |  ------------- | 
 | addText()| 添加文本 | text、textSize、textColor必选；isBold、isUnderline、handleClick可选 |
 | addTagText()| 添加标签文本 | text、textSize、textColor、background必选；isBold、isUnderline、handleClick可选 |
-| addImage()| 添加文本 | resId、width、height必选；handleClick可选 |
+| addImage()| 添加图标 | resId、width、height必选；handleClick可选 |
 | addEmptyText()| 添加空格 | text必选 |
 | clear()| 清除所有已设置的样式和文字 | 无 |
 | build()| 建造富文本 | 无 |
