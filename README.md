@@ -1,4 +1,4 @@
-# RichText
+# RichText[![](https://jitpack.io/v/LiuDongCai/RichText.svg)](https://jitpack.io/#LiuDongCai/RichText)
 
 * 富文本开发中经常用到，每次开发都要写一堆代码。现在网上封装的都很臃肿而且不太好用。这是全网最好用的富文本控件，支持各种富文本样式以及点击事件。
 
