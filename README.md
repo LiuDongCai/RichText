@@ -18,7 +18,7 @@
 
    ```groovy
    dependencies {
-   	implementation 'com.github.LiuDongCai:RichText:master-SNAPSHOT'
+   	implementation 'com.github.LiuDongCai:RichText:1.0.7'
    }
    ```
 
