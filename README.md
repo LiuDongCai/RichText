@@ -18,7 +18,7 @@
 
    ```groovy
    dependencies {
-   	implementation 'com.github.LiuDongCai:RichText:1.0.7'
+   	implementation 'com.github.LiuDongCai:RichText:1.0.8'
    }
    ```
 

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.github.LiuDongCai'
-version = '1.0.7'
+version = '1.0.8'
 
 android {
     compileSdk 34
@@ -47,7 +47,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.LiuDongCai'
                 artifactId = 'RichText'
-                version = '1.0.7'
+                version = '1.0.8'
             }
         }
     }
