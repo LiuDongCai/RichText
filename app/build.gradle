@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.liudongcai.richtext"
         minSdk 21
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-//    implementation 'com.github.LiuDongCai:RichText:1.0.5'
     implementation project(':richtext')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
